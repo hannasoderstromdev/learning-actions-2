@@ -28,6 +28,5 @@ jobs:
         run: npm ci
       - name: Build App
         run: npm run build
-      - name: Deploy
-        run: echo "TODO: Deploy"
-        
+      - name: Deploy App
+        run: echo "Deploying ..."
