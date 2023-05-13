@@ -1,5 +1,5 @@
 name: Deploy App
-on: push
+on: [push, workflow_dispatch]
 jobs:
   # Note: Each Job runs on an individual virtual machine
   test:
