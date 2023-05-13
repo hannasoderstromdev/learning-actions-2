@@ -1,10 +1,24 @@
 name: Tests & Linting
 on:
-  push:
   pull_request:
     types:
       - opened
+    branches:
+      - main
+      - "dev-*"
+      - "feat/**"
+      - "bug/**"
+      - "patch/**"
   workflow_dispatch:
+  push:
+    branches:
+      - main
+      - "dev-*"
+      - "feat/**"
+      - "bug/**"
+      - "patch/**"
+    paths-ignore:
+      - ".github/workflows/*"
 jobs:
   test:
     runs-on: ubuntu-latest
