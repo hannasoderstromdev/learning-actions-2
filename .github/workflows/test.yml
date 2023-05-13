@@ -1,6 +1,5 @@
 name: Tests & Linting
 on:
-  push:
   pull_request:
     types:
       - opened
